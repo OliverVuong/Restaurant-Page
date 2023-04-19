@@ -29,11 +29,37 @@ const makePage = () => {
     body.appendChild(document.createElement('footer'));
 }
 
+const clearMain = () => {
+    const main = document.querySelector('main');
+    while(main.hasChildNodes()) {
+        main.removeChild(main.firstChild);
+    }
+}
+
 makePage();
+
+const homeBtn = document.querySelector('.homeBtn');
+homeBtn.onclick = () => {
+    clearMain();
+    makeHome(document.querySelector('main'));
+}
+
+const menuBtn = document.querySelector('.menuBtn');
+menuBtn.onclick = () => {
+    clearMain();
+    makeMenuPage(document.querySelector('main'));
+}
+
+
+const contactBtn = document.querySelector('.contactBtn');
+menuBtn.onclick = () => {
+    clearMain();
+    makeContactPage(document.querySelector('main'));
+} 
 
 const main = document.querySelector('main');
 
 console.log("hello blah");
 makeHome(main);
-makeMenuPage();
-makeContactPage();
+makeMenuPage(main);
+makeContactPage(main);

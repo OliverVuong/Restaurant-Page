@@ -1,4 +1,4 @@
-const makeMenuPage = () => {
+const makeMenuPage = (main) => {
     console.log('hello menu page');
 }
 
