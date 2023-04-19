@@ -31,7 +31,9 @@ const makePage = () => {
 
 makePage();
 
+const main = document.querySelector('main');
+
 console.log("hello blah");
-makeHome();
+makeHome(main);
 makeMenuPage();
 makeContactPage();
