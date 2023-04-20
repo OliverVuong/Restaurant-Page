@@ -31,7 +31,16 @@ const appendDish = (main, dish) => {
     dishContainer.appendChild(picture);
 }
 
+const appendSectionTitle = (main, title) => {
+    const sectionTitle = document.createElement('h2');
+    sectionTitle.classList.add('sectionTitle');
+    sectionTitle.textContent = title;
+    main.appendChild(sectionTitle);
+};
+
 const makeMenuPage = (main) => {
+
+    appendSectionTitle(main, 'Starters');
     const scallops = dishFactory(
         'Scallops', 
         'Lightly seared scallops with lemon juice',

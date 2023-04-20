@@ -61,5 +61,5 @@ const main = document.querySelector('main');
 
 console.log("hello blah");
 makeHome(main);
-makeMenuPage(main);
-makeContactPage(main);
+//makeMenuPage(main);
+//makeContactPage(main);
