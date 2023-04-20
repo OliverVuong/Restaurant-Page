@@ -52,7 +52,7 @@ menuBtn.onclick = () => {
 
 
 const contactBtn = document.querySelector('.contactBtn');
-menuBtn.onclick = () => {
+contactBtn.onclick = () => {
     clearMain();
     makeContactPage(document.querySelector('main'));
 } 
