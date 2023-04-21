@@ -1,3 +1,5 @@
+import risottoPic from './images/risotto.jpg';
+
 const dishFactory = (dishName, description, price, pictureSrc, pictureAlt) => {
     return { dishName, description, price, pictureSrc, pictureAlt };
 };
@@ -53,7 +55,7 @@ const makeMenuPage = (main) => {
         'Lobster Risotto',
         'Butter poached lobster tail, truffle risotto',
         '$21',
-        './images/risotto',
+        risottoPic,
         'risotto with pieces of lobster sitting on top'
     );
     
