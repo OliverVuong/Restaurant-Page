@@ -43,7 +43,6 @@ const appendSectionTitle = (main, title) => {
 
 const makeMenuPage = (main) => {
 
-
     const scallops = dishFactory(
         'Scallops', 
         'Lightly seared scallops with lemon juice',
